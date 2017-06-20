@@ -28,7 +28,6 @@
       var fullPath = "https://script.google.com/macros/s/AKfycbwv6Z6c89eNW7eoaQPX3oOsXLLhNjFtjTkj8FAhl_W8/dev"
       var loc = location.href.split('?')[1];
       loc? fullPath+= '?' + loc : ""
-      console.log(document.getElementById('frame'))
       
       if (document.getElementById('frame'))
         document.getElementById('frame').src = fullPath
