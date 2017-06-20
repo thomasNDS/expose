@@ -25,19 +25,14 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
   <script>
     var loadIframe = function() {
-      function getUrlVars() {
-        var vars = {};
-        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
-          function(m, key, value) {
-            vars[key] = value;
-          });
-        return vars;
-      }
-      var fullPath = "https://script.google.com/macros/s/AKfycbxqd3bFwVpmY1hGrq0HNheCGIwiXoVIXBUB7CcDnsQ-_6uKHO8l/exec?page=" + getUrlVars()["page"];
+      var fullPath = "https://script.google.com/macros/s/AKfycbxqd3bFwVpmY1hGrq0HNheCGIwiXoVIXBUB7CcDnsQ-_6uKHO8l/exec"
+      var loc = location.href.split('?')[1];
+      loc? fullPath+= '?' + loc : ""
       console.log(document.getElementById('frame'))
+      
       if (document.getElementById('frame'))
         document.getElementById('frame').src = fullPath
-      console.log("load")
+      console.debug("load")
     }
     $(document).ready(function() {
       loadIframe()
