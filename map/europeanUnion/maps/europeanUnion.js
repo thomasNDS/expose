@@ -8,7 +8,7 @@ var colorA ="#90CAF9", hoverA="#5C6BC0" // bleu clair
 var colorB ="#CE93D8", hoverB="#AB47BC" // violet
 var colorC ="#9FA8DA", hoverC="#5C6BC0" // bleu indigo
 var selectedColor = "#FFC107"
-var hoverSelectedColor = "#FFC107"
+var hoverSelectedColor = "#FFF8E1"
 
 window.LGMaps.maps.europeanUnion = {
 	"config": {
