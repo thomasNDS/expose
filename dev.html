@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>HT</title>
+  <style type="text/css">
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    .warning-bar {
+      display: none;
+    }
+    #content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+    var loadIframe = function() {
+      var fullPath = "https://script.google.com/macros/s/AKfycbwv6Z6c89eNW7eoaQPX3oOsXLLhNjFtjTkj8FAhl_W8/dev"
+      var loc = location.href.split('?')[1];
+      loc? fullPath+= '?' + loc : ""
+      
+      if (document.getElementById('frame'))
+        document.getElementById('frame').src = fullPath
+      console.debug("load")
+    }
+    $(document).ready(function() {
+      loadIframe()
+    });
+  </script>
+</head>
+
+<body>
+  <div id="content">
+    <iframe id="frame" width="100%" frameborder="0" style="margin-top: -50px; height: calc(100% + 50px);" src="" />
+  </div>
+</body>
+</html
