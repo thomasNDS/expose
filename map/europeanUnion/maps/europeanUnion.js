@@ -304,15 +304,14 @@ window.LGMaps.maps.europeanUnion = {
       // Text displayed in tooltip
       "name": "Here",
       // Pin X position (see global displayMousePosition to figure out this value)
-      "xPos": 10,
+      "xPos": 300,
       // Pin Y position (see global displayMousePosition to figure out this value)
-      "yPos": 10,
+      "yPos": 250,
       // Default pin background color
       "color": "red",
       // Pin hover background color
-      "hoverColor": "pink",
-      // Pin selected background color
-      "selectedColor": "green"
+      "hoverColor": "yellow",
+     // "selectedColor": "green"
     }
 	]
 }
