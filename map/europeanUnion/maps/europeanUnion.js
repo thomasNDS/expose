@@ -303,7 +303,7 @@ window.LGMaps.maps.europeanUnion = {
 	]
 }
 if (selected === "Luxembourg"){
-	window.LGMaps.maps.europeanUnion.pins.add(		    {
+	window.LGMaps.maps.europeanUnion.pins.push(		    {
 		      "name": "Luxembourg",
 		      "xPos": 250,
 		      "yPos": 345,
