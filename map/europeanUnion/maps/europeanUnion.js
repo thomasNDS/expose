@@ -192,6 +192,7 @@ window.LGMaps.maps.europeanUnion = {
 			"enable": true,
 			"name": "Luxembourg",
 			"abbreviation": "LU",
+			"strokeColor": "red",
 			"color": ((selected === "Luxembourg") ? selectedColor :colorC),
 			"selectedColor": ((selected === "Luxembourg") ? selectedColor :colorC),
 			"hoverColor": ((selected === "Luxembourg") ? hoverSelectedColor :hoverC),
