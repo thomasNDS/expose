@@ -192,8 +192,6 @@ window.LGMaps.maps.europeanUnion = {
 			"enable": true,
 			"name": "Luxembourg",
 			"abbreviation": "LU",
-			"strokeColor": ((selected === "Luxembourg") ? "red":"#24221f"),
-			"strokeWidth": ((selected === "Luxembourg") ? 5:1),
 			"color": ((selected === "Luxembourg") ? selectedColor :colorC),
 			"selectedColor": ((selected === "Luxembourg") ? selectedColor :colorC),
 			"hoverColor": ((selected === "Luxembourg") ? hoverSelectedColor :hoverC),
@@ -302,5 +300,19 @@ window.LGMaps.maps.europeanUnion = {
 		}
 	],
 	"pins": [
+		    {
+      // Text displayed in tooltip
+      "name": "Here",
+      // Pin X position (see global displayMousePosition to figure out this value)
+      "xPos": 10,
+      // Pin Y position (see global displayMousePosition to figure out this value)
+      "yPos": 10,
+      // Default pin background color
+      "color": "red",
+      // Pin hover background color
+      "hoverColor": "pink",
+      // Pin selected background color
+      "selectedColor": "green"
+    }
 	]
 }
