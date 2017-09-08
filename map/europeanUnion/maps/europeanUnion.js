@@ -304,9 +304,9 @@ window.LGMaps.maps.europeanUnion = {
       // Text displayed in tooltip
       "name": "Here",
       // Pin X position (see global displayMousePosition to figure out this value)
-      "xPos": 300,
+      "xPos": 280,
       // Pin Y position (see global displayMousePosition to figure out this value)
-      "yPos": 250,
+      "yPos": 300,
       // Default pin background color
       "color": "red",
       // Pin hover background color
