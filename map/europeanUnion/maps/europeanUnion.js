@@ -300,18 +300,15 @@ window.LGMaps.maps.europeanUnion = {
 		}
 	],
 	"pins": [
-		    {
-      // Text displayed in tooltip
-      "name": "Here",
-      // Pin X position (see global displayMousePosition to figure out this value)
-      "xPos": 250,
-      // Pin Y position (see global displayMousePosition to figure out this value)
-      "yPos": 350,
-      // Default pin background color
-      "color": "red",
-      // Pin hover background color
-      "hoverColor": "yellow",
-     // "selectedColor": "green"
-    }
 	]
 }
+if (selected === "Luxembourg"){
+	window.LGMaps.maps.europeanUnion.pins.add(		    {
+		      "name": "Luxembourg",
+		      "xPos": 250,
+		      "yPos": 345,
+		      "color": "red",
+		      "hoverColor": "yellow",
+		    })
+}
+
